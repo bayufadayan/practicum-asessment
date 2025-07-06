@@ -1,9 +1,14 @@
-import { useState } from "react";
+"use client";
+import { useEffect, useState } from "react";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
 function PDFViewer({ item, index, total, handleNext, handlePrev, updateNilai }) {
     const [inputNilai, setInputNilai] = useState(item.nilai || "");
+
+    useEffect(() => {
+        setInputNilai(item.nilai || "");
+    }, [item]);
 
     const handleInputChange = (e) => {
         const value = e.target.value;
