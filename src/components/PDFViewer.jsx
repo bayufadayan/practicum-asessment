@@ -40,7 +40,22 @@ function PDFViewer({ item, index, total, handleNext, handlePrev, updateNilai }) 
                 </div>
 
                 {/* FORM NILAI */}
-                <div className="lg:w-80 w-full flex flex-col gap-4">
+                <div className="lg:w-80 w-full flex flex-col gap-4 w-full">
+                    <div className="flex flex-wrap gap-4 mb-4">
+                        <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm min-w-[140px] w-full">
+                            <h4 className="text-sm font-medium text-white/70">Nama - NPM</h4>
+                            <p className="text-base font-semibold text-white">{item.nama} - {item.npm}</p>
+                        </div>
+                        <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm min-w-[140px] flex-1">
+                            <h4 className="text-sm font-medium text-white/70">Kelas</h4>
+                            <p className="text-base font-semibold text-white">{item.kelas}</p>
+                        </div>
+                        <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm min-w-[140px] flex-1">
+                            <h4 className="text-sm font-medium text-white/70">Tipe Soal</h4>
+                            <p className="text-base font-semibold text-white">{item.tipeSoal}</p>
+                        </div>
+                    </div>
+
                     <div>
                         <label className="block font-medium mb-1">Nilai:</label>
                         <input
