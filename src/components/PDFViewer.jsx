@@ -40,7 +40,7 @@ function PDFViewer({ item, index, total, handleNext, handlePrev, updateNilai }) 
                 </div>
 
                 {/* FORM NILAI */}
-                <div className="lg:w-80 w-full flex flex-col gap-4 w-full">
+                <div className="lg:w-80 w-full flex flex-col gap-4">
                     <div className="flex flex-wrap gap-4 mb-4">
                         <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm min-w-[140px] w-full">
                             <h4 className="text-sm font-medium text-white/70">Nama - NPM</h4>
